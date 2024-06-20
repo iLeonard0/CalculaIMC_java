@@ -51,10 +51,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //processamento
-        double peso = Double.parseDouble( etPeso.getText().toString() );
-        double altura = Double.parseDouble( etAltura.getText().toString() );
-
-        double resultado = peso / Math.pow( altura, 2 );
+        double resultado = Double.parseDouble(etPeso.getText().toString()) / Math.pow(Double.parseDouble(etAltura.getText().toString()),2);
 
         //saída
         DecimalFormat df = new DecimalFormat( "0.00" );
